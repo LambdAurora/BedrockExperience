@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "bedrockexperience",
+  "name": "Bedrock Experience",
+  "version": "${version}",
+  "description": "Bringing awesome features from Bedrock Edition to Java.",
+  "authors": [
+    "LambdAurora"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/bedrockexperience",
+    "sources": "https://github.com/LambdAurora/BedrockExperience.git",
+    "issues": "https://github.com/LambdAurora/BedrockExperience/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/bedrockexperience/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.lambdaurora.bedrockexperience.BedrockExperience"
+    ],
+    "modmenu": [
+      "me.lambdaurora.bedrockexperience.BedrockExperienceModMenu"
+    ]
+  },
+  "mixins": [
+    "bedrock.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*",
+    "minecraft": ">=1.15",
+    "cotton-client-commands": ">=0.4.2+1.14.3-SNAPSHOT",
+    "spruceui": ">=1.3.5"
+  },
+  "suggests": {
+    "flamingo": "*",
+    "lambdacontrols": "*"
+  },
+  "breaks": {
+    "modmenu": "<1.9.0"
+  },
+  "custom": {
+    "modmenu:clientsideOnly": true
+  }
+}

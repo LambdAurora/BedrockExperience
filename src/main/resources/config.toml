@@ -1,0 +1,16 @@
+# BedrockExperience configuration.
+
+[coordinates_indicator]
+    # Enables the coordinate indicator.
+    enable = true
+    # Enables the background.
+    background = true
+    # Amount of decimals for the three coordiantes.
+    decimals = 0
+
+# Colors
+[colors]
+normal = "#ffffffff"
+pressed = "#ffa000ff"
+background_normal = "#000000aa"
+background_pressed = "#555555aa"
